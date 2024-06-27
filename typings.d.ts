@@ -5,7 +5,7 @@ interface Board {
 type TypedColumn = "todo" | "inprogress" | "done";
 
 interface Column {
-  id: TypedColum;
+  id: TypedColumn;
   todos: Todo[];
 }
 
@@ -13,7 +13,7 @@ interface Todo {
   $id: string;
   $createdAt: string;
   title: string;
-  status: TypedColum;
+  status: TypedColumn;
   image?: Image;
 }
 
